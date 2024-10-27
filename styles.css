@@ -121,6 +121,7 @@ body{
     padding: 40px;
     color: #fff;
     transition: .5s;
+    opacity: 0;
 }
 
 .project-title{
@@ -154,4 +155,12 @@ body{
 .project-btn.readmore{
     background: none;
     border: 2px solid #fff;
+}
+
+.project-card:hover .project-img{
+    filter: blur(20px);
+}
+
+.project-card:hover .project-content{
+    opacity: 1;
 }
