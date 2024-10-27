@@ -1,11 +1,11 @@
 const links = document.querySelectorAll('.link');
-const sections = document.querySelectorAll('section');
+const sections = document.querySelectorAll('section');  // changed to 'sections'
 
 let activeLink = 0;
 
 links.forEach((link, i) => {
     link.addEventListener('click', () => {
-        if(activeLink != i){
+        if (activeLink !== i) {
             links[activeLink].classList.remove('active');
             link.classList.add('active');
             sections[activeLink].classList.remove('active');
@@ -14,7 +14,7 @@ links.forEach((link, i) => {
                 activeLink = i;
                 sections[i].classList.add('active');
             }, 1000);
-
         }
-    })
-})
+    });
+});
+
