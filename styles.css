@@ -46,6 +46,14 @@ body{
 .link a:hover, .link active a{
     opacity: 1;
 }
+.home-section.active,
+.project-section.active{
+    position: relative;
+    opacity: 1;
+    z-index: 8;
+}
+
+
 /** Home Section **/
 .home-section{
     width: 100%;
@@ -59,11 +67,6 @@ body{
     transition: 1s;
 }
 
-.home-section active{
-    position: relative;
-    opacity: 1;
-    z-index: 8;
-}
 
 .home-heading{
     color: #fff;
@@ -81,6 +84,7 @@ body{
     position: fixed;
     top: 0;
     transition: 1s;
+    opacity: 0;
 }
 
 .project-heading{
