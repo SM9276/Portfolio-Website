@@ -1,21 +1,23 @@
-*{
+/* Universal Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+/* Body Styling */
+body {
     width: 100%;
     max-width: 1400px;
-    display: block;
     margin: auto;
-    min-height: 100v;
+    min-height: 100vh;
     background: #191919;
     font-family: sans-serif;
 }
 
-.navbar{
-    width:100%;
+/* Navbar */
+.navbar {
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -23,10 +25,10 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 9;
-    background: #1a1a1a
+    background: #1a1a1a;
 }
 
-.link-group{
+.link-group {
     list-style-type: none;
     display: flex;
 }
@@ -39,56 +41,49 @@ body{
     padding: 10px 30px;
     margin: 0 20px;
     line-height: 80px;
-    transition: .2s;
+    transition: 0.2s;
     font-size: 20px;
 }
 
-.link a:hover, .link active a{
+.link a:hover, .link.active a {
     opacity: 1;
 }
-.home-section.active,
-.project-section.active
-.about-section.active{
-    position: relative;
+
+/* Section Visibility */
+section {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+section.active {
     opacity: 1;
     z-index: 8;
 }
 
-
-/** Home Section **/
-.home-section{
+/* Home Section */
+.home-section {
     width: 100%;
     height: 100vh;
     padding: 0 150px;
     display: flex;
     align-items: center;
-    position: fixed;
-    top: 0;
-    opacity: 0;
-    transition: 1s;
 }
 
-
-.home-heading{
+.home-heading {
     color: #fff;
     font-size: 120px;
-    text-transform: capitalize; 
+    text-transform: capitalize;
     font-weight: 300;
 }
 
-/** Project Section **/
-
-.project-section{
+/* Project Section */
+.project-section {
     width: 100%;
     min-height: 100vh;
     padding: 150px 100px 100px;
-    position: fixed;
-    top: 0;
-    transition: 1s;
-    opacity: 0;
 }
 
-.project-heading{
+.project-heading {
     font-size: 100px;
     background: #252525;
     text-transform: capitalize;
@@ -97,115 +92,112 @@ body{
     color: #1a1a1a;
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-stroke: 8px transparent;
+    -webkit-text-stroke: 1px transparent;
 }
 
-.project-container{
+.project-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 100px;
 }
 
-.project-card{
+.project-card {
     height: 400px;
     position: relative;
+    overflow: hidden;
 }
 
-.project-img{
+.project-img {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     object-fit: cover;
-    transition: .5s;
+    transition: 0.5s;
 }
 
-.project-content{
+.project-content {
     position: relative;
     padding: 40px;
     color: #fff;
-    transition: .5s;
     opacity: 0;
+    transition: opacity 0.5s;
 }
 
-.project-title{
+.project-title {
     font-size: 50px;
     text-transform: capitalize;
     text-align: center;
     font-weight: 300;
 }
 
-.project-info{
+.project-info {
     margin: 40px;
     font-size: 20px;
-    line-height: center;
+    text-align: center;
 }
 
-.project-btn-grp{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+.project-btn-grp {
+    display: flex;
+    justify-content: space-around;
 }
 
-.project-btn{
-    height: 40px;
-    text-transform: capitalize;
+.project-btn {
+    padding: 10px 20px;
     font-size: 18px;
     border: none;
     background: #000;
     color: #fff;
     cursor: pointer;
+    transition: background 0.3s;
 }
-.project-btn.readmore{
+
+.project-btn.readmore {
     background: none;
     border: 2px solid #fff;
 }
 
-.project-card:hover .project-img{
+.project-card:hover .project-img {
     filter: blur(20px);
 }
 
-.project-card:hover .project-content{
+.project-card:hover .project-content {
     opacity: 1;
 }
 
-/** About Section **/
-
-.about-section{
+/* About Section */
+.about-section {
     width: 100%;
     min-height: 100vh;
-    padding: 150px 100px 0;
-    position: relative;
-    top: 0;
-    transition: 1s;
-    opacity: 0;
+    padding: 150px 100px;
 }
 
-.about{
-    width: 100%;
+.about {
     display: grid;
     grid-template-columns: 30% 65%;
     grid-gap: 40px;
 }
 
-.about-img-container{
+.about-img-container {
     position: relative;
 }
 
-.about-info{
+.about-info {
     color: #fff;
-    opacity: 0.6;
+    opacity: 0.8;
     font-size: 20px;
-    line-height: 40px;
+    line-height: 1.6;
 }
-.about-img{
+
+.about-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
 }
-.download-cv-btn{
+
+.download-cv-btn {
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -214,25 +206,22 @@ body{
     color: #fff;
     border: none;
     font-size: 16px;
-    text-transform: capitalize;
     cursor: pointer;
-    transition: .5s;
     background: rgba(0, 0, 0, 0.5);
+    transition: background 0.5s;
 }
 
-.download-cv-btn:hover{
-    background:#000;
+.download-cv-btn:hover {
+    background: #000;
 }
 
-/** Skills Section **/
-
-.skill-section{
-    position: relative;
+/* Skills Section */
+.skill-section {
     margin: 100px 0;
+    text-align: center;
 }
 
-.heading{
-    text-align: center;
+.heading {
     font-size: 60px;
     color: #fff;
     text-transform: capitalize;
@@ -240,147 +229,65 @@ body{
     margin-bottom: 100px;
 }
 
-.skill-container{
-    width: 95%;
-    margin: auto;
+.skill-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
     color: #fff;
 }
 
-.skill-card{
-    position: relative;
+.skill-card {
+    text-align: center;
 }
 
-.skill-img{
-    display: block;
-    margin: auto;
+.skill-img {
     height: 200px;
+    display: block;
+    margin: 0 auto;
 }
 
-.skill-name{
+.skill-name {
     font-size: 30px;
     font-weight: 300;
-    text-align: center;
-    text-transform: capitalize;
     margin: 30px 0 20px;
 }
 
-.skill-info{
-    text-align: center;
-    opacity: 0.5;
+.skill-info {
+    opacity: 0.6;
     font-size: 18px;
     line-height: 30px;
 }
 
-/** Timeline Section **/
-.timeline-section{
-    display: block;
+/* Timeline Section */
+.timeline {
     width: 80%;
     margin: 150px auto;
 }
 
-.timeline .heading{
-    margin-bottom: 150px;
+.timeline .heading {
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 100px;
 }
-.card{
+
+.card {
     width: 45%;
     padding: 30px;
     border-radius: 10px;
     color: #fff;
-    display: block;
     margin: -80px 0;
     position: relative;
-    background: #f00;
+    background: #333;
 }
 
-.card:nth-child(even){
+.card:nth-child(even) {
     margin-left: auto;
 }
 
-
-.card:nth-child(even):before{
-    content: '';
-    position: absolute;
-    left: -15%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    border: 5px solid #191919;
-    border-radius: 50%;
-}
-
-.card:nth-child(even):after{
-    content: '';
-    position: absolute;
-    left: -8.5%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 7%;
-    height: 2px;
-    background: #fff;
-    z-index: -1;
-}
-
-.card:nth-child(odd):before{
-    content: '';
-    position: absolute;
-    right: -13%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    border: 5px solid #191919;
-    border-radius: 50%;
-}
-
-.card:nth-child(odd):after{
-    content: '';
-    position: absolute;
-    right: -8.5%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 7%;
-    height: 2px;
-    background: #fff;
-    z-index: -1;
-}
-
-.card:nth-child(2), .card:nth-child(2):before{
-    background: #ff4f4f;
-}
-.card:nth-child(3), .card:nth-child(3):before{
-    background: #ffb84f;
-}
-.card:nth-child(4), .card:nth-child(4):before{
-    background: #3dca5c;
-}
-.card:nth-child(5), .card:nth-child(5):before{
-    background: #565252;
-}
-.card:nth-child(6), .card:nth-child(6):before{
-    background: #4fa0ff28;
-}
-
-.card:nth-child(7), .card:nth-child(7):before{
-    background: #ff4f4f;
-}
-.card:nth-child(even) .card-body:after{
-    content: '';
-    position: absolute;
-    left: -12%;
-    top: 0;
-    width: 0;
-    height: 100%;
-    border: 1px dashed #fff;
-    z-index: -1;
-}
-
-.card-title{
+.card-title {
     font-size: 30px;
     font-weight: 300;
     margin-bottom: 20px;
 }
-
 

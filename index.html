@@ -1,157 +1,145 @@
 <!DOCTYPE html>
 <html>
    <head> 
-	<title> Sergio Mercado Nuñez </title>
-	<meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
+      <title> Sergio Mercado Nuñez </title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="styles.css">
    </head>
 
    <body>
 
-	<!-- Navigation  -->	
-	<nav class="navbar">
-        <ul class="link-group">
-            <li class="link active"> <a href="#">Home</a> </li>
-            <li class="link"> <a href="#">Projects</a> </li>
-            <li class="link"> <a href="#">About</a> </li>
-            <li class="link"> <a href="#">Blog</a> </li>
-        </ul>
-	</nav>
+      <!-- Navigation  -->    
+      <nav class="navbar">
+         <ul class="link-group">
+            <li class="link active"> <a href="#home">Home</a> </li>
+            <li class="link"> <a href="#projects">Projects</a> </li>
+            <li class="link"> <a href="#about">About</a> </li>
+            <li class="link"> <a href="#blog">Blog</a> </li>
+         </ul>
+      </nav>
 
-	<!-- Home Section -->	
-    <section class="home-section active">
-        <h1 class="home-heading"> Hi! I'm Sergio</h1> 
-    </section>  	
-    
-	<!-- Project Section -->	
-    <section class="project-section">
-        
-        <h1 class="project-heading"> Check out my Recent Projects:</h1> 
-        <div class="project-container" >
+      <!-- Home Section -->    
+      <section id="home" class="home-section active">
+         <h1 class="home-heading"> Hi! I'm Sergio</h1> 
+      </section>     
+
+      <!-- Project Section -->    
+      <section id="projects" class="project-section">
+         <h1 class="project-heading"> Check out my Recent Projects:</h1> 
+         <div class="project-container">
             <!-- Project 1 -->
             <div class="project-card">
-                <img src="img/project-1.png" class="project-img" alt="">
-                <div class="project-content">
-                    <h1 class="project-title">PLEXOS to Bokeh Pivot (P2BP)</h1>
-                    <p class="project-info">A Python tool that converts PLEXOS XML solution files to CSV format and 
-                    visualizes data using Bokeh Pivot, designed for scenario comparison.</p>
-                    <div class="project-btn-grp">
-                        <button class="project-btn github">github repo</button>
-                        <button class="project-btn readmore">read more</button>
-                    </div>
-                </div>
+               <img src="img/project-1.png" class="project-img" alt="Screenshot of PLEXOS to Bokeh Pivot project">
+               <div class="project-content">
+                  <h1 class="project-title">PLEXOS to Bokeh Pivot (P2BP)</h1>
+                  <p class="project-info">A Python tool that converts PLEXOS XML solution files to CSV format and 
+                  visualizes data using Bokeh Pivot, designed for scenario comparison.</p>
+                  <div class="project-btn-grp">
+                     <a href="https://github.com/your-repo" target="_blank"><button class="project-btn github">GitHub Repo</button></a>
+                     <a href="https://yourwebsite.com/p2bp" target="_blank"><button class="project-btn readmore">Read More</button></a>
+                  </div>
+               </div>
             </div>
             <!-- Project 2 -->
             <div class="project-card">
-                <img src="img/project-2.png" class="project-img" alt="">
-                <div class="project-content">
-                    <h1 class="project-title">GroSal</h1>
-                    <p class="project-info">
-                    A React Native app with Expo, and JavaScript that allows weekly budget tracking,
-                    expense recording, and visualization of spending habits. </p>
-                    <div class="project-btn-grp">
-                        <button class="project-btn github">github repo</button>
-                        <button class="project-btn readmore">read more</button>
-                    </div>
-                </div>
+               <img src="img/project-2.png" class="project-img" alt="Screenshot of GroSal budget tracking app">
+               <div class="project-content">
+                  <h1 class="project-title">GroSal</h1>
+                  <p class="project-info">
+                  A React Native app with Expo and JavaScript that allows weekly budget tracking,
+                  expense recording, and visualization of spending habits.</p>
+                  <div class="project-btn-grp">
+                     <a href="https://github.com/your-repo" target="_blank"><button class="project-btn github">GitHub Repo</button></a>
+                     <a href="https://yourwebsite.com/grosal" target="_blank"><button class="project-btn readmore">Read More</button></a>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
+         </div>
+      </section>
 
-	<!-- AboutMe Section -->	
-    <section class="about-section">
-        <div class="about">
+      <!-- AboutMe Section -->    
+      <section id="about" class="about-section">
+         <div class="about">
             <div class="about-img-container">
-                <img src="img/home.png" class="about-img" alt=""> 
-                <button class="download-cv-btn"> Download CV</button>
+               <img src="img/home.png" class="about-img" alt="Portrait of Sergio Mercado Nuñez"> 
+               <button class="download-cv-btn"> Download CV</button>
             </div>
-            <p class="about-info"> Hello! My Name is Sergio Mercado Nuñez. This is my first website using PHP, HTML, and CSS, 
+            <p class="about-info"> Hello! My name is Sergio Mercado Nuñez. This is my first website using PHP, HTML, and CSS, 
             and it's now live on the internet! I am a computer engineering student at the Rochester Institute of Technology. 
             I love learning about computers and how they work!
-            My most recent obsession has been VHDL, and I am currently working on a Gameboy Hardware Emulator using it.	
+            My most recent obsession has been VHDL, and I am currently working on a Gameboy Hardware Emulator using it.    
             I am also currently working as a Research Assistant at the Golisano Institute of Technology.
-            The project that I created for the research is a tool called PLEXOS to Bokeh Pivot(P2BP) 
-            written in Python. I love the feeling of performing and dancing mexican folk since
-            I get to spread my beautiful culture .
-            I also love my pet dog Oreo
-        </div>	
-    </section>
+            The project that I created for the research is a tool called PLEXOS to Bokeh Pivot (P2BP) 
+            written in Python. I love the feeling of performing and dancing Mexican folk since
+            I get to spread my beautiful culture.
+            I also love my pet dog, Oreo.</p>
+         </div>   
+      </section>
 
-    <!-- Skills Section -->	
-    <div class="skill-section">
-        <h1 class="heading">Skills</h1> 
-        <div class="skill-container">
+      <!-- Skills Section -->    
+      <section id="skills" class="skill-section">
+         <h1 class="heading">Skills</h1> 
+         <div class="skill-container">
             <div class="skill-card">
-                <img src="img/vhdl.png" class="skill-img" alt=""> 
-                <h1 class="skill-name">VHDL</h1>
-                <p class="skill-info"> I use VHDL 1993 most often </p> 
+               <img src="img/vhdl.png" class="skill-img" alt="VHDL logo"> 
+               <h1 class="skill-name">VHDL</h1>
+               <p class="skill-info"> I use VHDL 1993 most often </p> 
             </div>
-        </div>
-    </div>
-    
-    <!-- Timeline Section -->	
-    <div class="timeline">
-        <h1 class="heading">My Computer Engineering Journey</h1>
-        
-        <!-- First Computer  -->	
-        <div class="card">
-            <div class ="card-body">
-                <h1 class="card-title"> 2012 </h1>     
-                <p class="card-detail"> The first computer I interacted with was my father's Windows XP machine, 
-                which i was not supposed to touch. Since I was always so curious, I ended up dismantling it.
-                I really wanted to know how this box displayed an image. My father was really mad that night! </p>
-            </div>
-        </div>
-        
-        <!-- Custom OS  -->	
-        <div class="card">
-            <div class ="card-body">
-                <h1 class="card-title"> 2015 </h1>     
-                <p class="card-detail"> I got into installing custom Andriod os, I was rocking Linage OS running Andriod 7.1.2.
-                I ended up helping my the community around me, I would help the farm workers unlocking their SIM cards
-                and improving their phones. </p>
-            </div>
-        </div>
+         </div>
+      </section>
 
-        <!-- Computer build -->	
-        <div class="card">
-            <div class ="card-body">
-                <h1 class="card-title"> 2016 </h1>     
-                <p class="card-detail"> A series of slow cheap laptops led me to want to build my own desktop computer. 
-                    I still use this machine to this day, i have upgraded the gpu but the i7-7700 is still going strong. </p>
-            </div>
-        </div>
+      <!-- Timeline Section -->    
+      <section id="timeline" class="timeline">
+         <h1 class="heading">My Computer Engineering Journey</h1>
 
-         <!-- First CS Class  -->	
-        <div class="card">
-            <div class ="card-body">
-                <h1 class="card-title"> 2018-2019 </h1>     
-                <p class="card-detail"> I took my first computer science class in my Freshman Year of High school, 
-                We learned the fundementals of boolean logic and did assignments in html, css </p>
+         <!-- First Computer  -->    
+         <div class="card">
+            <div class="card-body">
+               <h1 class="card-title"> 2012 </h1>     
+               <p class="card-detail"> The first computer I interacted with was my father's Windows XP machine, 
+               which I was not supposed to touch. Since I was always so curious, I ended up dismantling it.
+               I really wanted to know how this box displayed an image. My father was really mad that night! </p>
             </div>
-        </div>
+         </div>
 
-         <!-- AP Computer Science Class -->	
-        <div class="card">
-            <div class ="card-body">
-                <h1 class="card-title"> 2019-2020 </h1>     
-                <p class="card-detail"> Softmore year of Highschool I took AP Computer Science, 
-                I learned about Object Oriented Programming and built assignements in Java </p>
+         <!-- Custom OS  -->    
+         <div class="card">
+            <div class="card-body">
+               <h1 class="card-title"> 2015 </h1>     
+               <p class="card-detail"> I got into installing custom Android OS, running LineageOS with Android 7.1.2.
+               I helped my community by unlocking SIM cards and improving their phones for farm workers. </p>
             </div>
-        </div>
+         </div>
 
-        <!-- AP Comps build Section -->	
-        <div class="card">
-            <div class ="card-body">
-                <h1 class="card-title"> 2019-2020 </h1>     
-                <p class="card-detail"> Softmore year of Highschool I took AP Computer Science, 
-                I learned about Object Oriented Programming and built assignements in Java </p>
+         <!-- Computer build -->    
+         <div class="card">
+            <div class="card-body">
+               <h1 class="card-title"> 2016 </h1>     
+               <p class="card-detail"> A series of slow cheap laptops led me to want to build my own desktop computer. 
+                  I still use this machine to this day; I've upgraded the GPU, but the i7-7700 is still going strong. </p>
             </div>
-        </div>
+         </div>
 
-    </div> 
-   <script src="app.js"> </script>
+         <!-- First CS Class  -->    
+         <div class="card">
+            <div class="card-body">
+               <h1 class="card-title"> 2018-2019 </h1>     
+               <p class="card-detail"> I took my first computer science class in my freshman year of high school. 
+               We learned the fundamentals of Boolean logic and did assignments in HTML and CSS. </p>
+            </div>
+         </div>
+
+         <!-- AP Computer Science Class -->    
+         <div class="card">
+            <div class="card-body">
+               <h1 class="card-title"> 2019-2020 </h1>     
+               <p class="card-detail"> Sophomore year of high school, I took AP Computer Science, 
+               where I learned about Object-Oriented Programming and built assignments in Java. </p>
+            </div>
+         </div>
+      </section>
+
+      <script src="app.js"> </script>
    </body>
-
-
 </html>
+
