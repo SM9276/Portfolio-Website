@@ -1,6 +1,3 @@
-<?php
-// blog.php
-?>
 <!-- Blog Section -->
 <section class="blog-section">
     <h1 class="blog-heading"> Blog </h1>

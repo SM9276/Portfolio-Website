@@ -48,7 +48,8 @@ body{
 }
 .home-section.active,
 .project-section.active,
-.about-section.active{
+.about-section.active,
+.blog-section.active{
     position: relative;
     opacity: 1;
     z-index: 8;
