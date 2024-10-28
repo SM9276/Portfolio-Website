@@ -22,10 +22,21 @@
         <h1 class="heading">Skills</h1> 
         <div class="skill-container">
             <div class="skill-card">
-                <img src="img/VHDL.png" class="skill-img" alt=""> 
+                <img src="img/vhdl.png" class="skill-img" alt=""> 
                 <h1 class="skill-name">VHDL</h1>
                 <p class="skill-info">VHDL RULES!</p> 
+	    </div>
+	   <div class="skill-card">
+                <img src="img/C.png" class="skill-img" alt=""> 
+                <h1 class="skill-name">C</h1>
+                <p class="skill-info">A simple language but is so hard to master</p> 
             </div>
+	    <div class="skill-card">
+                <img src="img/ASM.png" class="skill-img" alt=""> 
+                <h1 class="skill-name">Assembly</h1>
+                <p class="skill-info">Low level language</p> 
+            </div>
+
         </div>
     </div>
    <!-- timeline.php -->
