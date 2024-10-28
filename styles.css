@@ -387,9 +387,21 @@ body{
 /** Blog Section **/
 .blog-section {
     width: 100%;
-    padding: 150px 100px;
+    height: 100vh; /* Ensures full viewport height */
+    padding: 150px 100px 0;
+    position: fixed; /* Fixes the section in place */
+    top: 0;
+    left: 0;
+    background: #191919; /* Matches the body background for consistency */
     opacity: 0;
     transition: 1s;
+    z-index: 7; /* Below active sections */
+}
+
+.blog-section.active {
+    position: fixed; /* Keeps it fixed when active */
+    opacity: 1;
+    z-index: 8; /* Above other sections */
 }
 
 .blog-heading {
