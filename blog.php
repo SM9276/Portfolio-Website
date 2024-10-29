@@ -4,11 +4,10 @@
     <div class="blog-container">
         <!-- Example Blog Post -->
         <div class="blog-post">
-            <h2 class="blog-title">My First Blog Post</h2>
-            <p class="blog-excerpt">Here's a short preview of the blog post. Click below to read more...</p>
-            <button class="read-more-btn" onclick="location.href='blog-post-1.html'">Read More</button>
+            <h2 class="blog-title">Restoring an IPhone SE 2020</h2>
+            <p class="blog-excerpt">I found my sisters old iPhone and I felt like restoring it!</p>
+            <button class="read-more-btn" onclick="location.href='blogs/blog_iphone.php'">Read More</button>
         </div>
-        <!-- Repeat for additional posts -->
     </div>
 </section>
 
