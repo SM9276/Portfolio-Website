@@ -448,3 +448,61 @@ body{
     background: #333;
 }
 
+/* Blog Post Page */
+.blog-post-page {
+    width: 100%;
+    max-width: 800px;
+    margin: 150px auto 50px;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blog-title {
+    font-size: 48px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.blog-date {
+    font-size: 16px;
+    opacity: 0.6;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.blog-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-text {
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.blog-list {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.blog-list li, .blog-list ol {
+    margin-bottom: 10px;
+}
+
+.blog-list ol {
+    list-style-type: decimal;
+}
+
+.blog-list ul {
+    list-style-type: disc;
+}
+
+
