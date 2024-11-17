@@ -1,14 +1,11 @@
-<!-- blogs/blog_iphone.php -->
 <?php
     include '../header.php';
 ?>
-
 <!-- Blog Post Content -->
 <section class="blog-post-page">
     <div class="blog-container">
         <h1 class="blog-title">Restoring an iPhone SE 2020</h1>
         <p class="blog-date">Posted on November 3, 2024</p>
-        <!-- <img src="../img/iphone_se_2020_restoration.jpg" alt="iPhone SE 2020 Restoration" class="blog-image"> -->
 
         <p class="blog-text">
             I recently stumbled upon my sister's old iPhone SE 2020 tucked away in a drawer. It had seen better days; the phone
@@ -71,7 +68,6 @@
 
     </div>
 </section>
-
 <?php
     include '../footer.php';
 ?>

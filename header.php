@@ -1,4 +1,3 @@
-<!-- header.php -->
 <!DOCTYPE html>
 <html>
 <head> 
@@ -10,10 +9,18 @@
 <!-- Navigation  -->    
 <nav class="navbar">
     <ul class="link-group">
-        <li class="link"> <a href="#">home</a> </li>
-        <li class="link"> <a href="#">projects</a> </li>
-        <li class="link"> <a href="#">about</a> </li>
-        <li class="link"> <a href="#">blog</a> </li>
+        <li class="link<?php if(basename($_SERVER['SCRIPT_NAME'])=='index.php') echo ' active'; ?>">
+            <a href="index.php">home</a>
+        </li>
+        <li class="link<?php if(basename($_SERVER['SCRIPT_NAME'])=='projects.php') echo ' active'; ?>">
+            <a href="projects.php">projects</a>
+        </li>
+        <li class="link<?php if(basename($_SERVER['SCRIPT_NAME'])=='about.php') echo ' active'; ?>">
+            <a href="about.php">about</a>
+        </li>
+        <li class="link<?php if(basename($_SERVER['SCRIPT_NAME'])=='blog.php') echo ' active'; ?>">
+            <a href="blog.php">blog</a>
+        </li>
     </ul>
 </nav>
 
