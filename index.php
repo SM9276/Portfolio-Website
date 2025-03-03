@@ -351,25 +351,18 @@
                             <a href="https://github.com/SM9276/retro-camera" target="_blank">View on GitHub</a>
                         </div>
                     </div>
+
                     <div id="modal-02" hidden="">
-                        
+                        <div class="modal-content">
+                            <span class="modal-close">&times;</span>
+                            <h2>AHHHH</h2>
+                            <p>This is a project where I built a retro-style camera using HTML, CSS, and JavaScript.</p>
+                            <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+                            <a href="https://github.com/SM9276/retro-camera" target="_blank">View on GitHub</a>
+                        </div>
                     </div> <!-- end modal -->
 
-                    <div id="modal-03" hidden="">
-                        
-                    </div> <!-- end modal -->
-
-                    <div id="modal-04" hidden="">
-                        
-                    </div> <!-- end modal -->
-
-                    <div id="modal-05" hidden="">
-                        
-                    </div> <!-- end modal -->
-
-                    <div id="modal-06" hidden="">
-                        
-                    </div> <!-- end modal -->
+                   
 
                 </div> <!-- end works-portfolio -->
 
